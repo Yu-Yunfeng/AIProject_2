@@ -119,15 +119,21 @@ class BasicModelChecking:
 
 
 beta = [
-    '~A',
-    '~B',
-    'C'
+    '~B'
 ]
 
 alpha = [
-    'A&C',
-    '~C',
-    'B|~A'
+    '~A',
+    '~F|~B|~D',
+    '~B|F',
+    '~D|F',
+    '~G|A|C|E',
+    '~A|G',
+    '~C|G',
+    '~E|G',
+    '~F',
+    'G'
+
 ]
 
 b = BasicModelChecking();
